@@ -1,0 +1,59 @@
+logging:
+  level:
+    com.tom.blog: info
+    org.apache: error
+
+test:
+  pro: ${TEST_P:12345}
+
+
+
+#spring:
+#  redis:
+#    host: ${REDIS_HOST:192.168.230.92}
+#    port: ${REDIS_PORT:6379}
+#    database: 5
+#  datasource:
+#    druid:
+#      name: druid-database-fireiot
+#      url: jdbc:postgresql://192.168.230.92:5432/fireiot_foxconn_dev
+##      url: ${spring.datasource.url}
+#      username: fireiot
+#      password: fireiot
+#      driver-class-name: org.postgresql.Driver
+#      filters: stat
+#      # 初始连接
+#      initialSize: 1
+#      # 最大连接数
+#      maxActive: 20
+#      # 获取的最长等待时
+#      maxWait: 60000
+#      # 最小空闲连接数
+#      minIdle: 1
+#      # 每一分钟执行空闲连接回收
+#      timeBetweenEvictionRunsMillis: 60000
+#      # 每十分钟回收空闲连接
+#      minEvictableIdleTimeMillis: 600000
+#      validationQuery: select 'x'
+#      testWhileIdle: true
+#      testOnBorrow: false
+#      testOnReturn: false
+#      poolPreparedStatements: true
+#      maxOpenPreparedStatements: 20
+#  jpa:
+#    #open-in-view: true
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: update
+#      #use-new-id-generator-mappings: true
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        enable_lazy_load_no_trans: true
+#        temp:
+#          use_jdbc_metadata_defaults: false
+
+
+
+
+
